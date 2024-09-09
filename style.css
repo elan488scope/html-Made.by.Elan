@@ -1,0 +1,1215 @@
+body{
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+
+    font-family: inter;
+}
+
+.hero-section-portrait{
+    display: flex;
+
+    height: 100dvh;
+    padding-left: 5%;
+    padding-right: 2.6%;
+}
+
+.hero-container-portrait{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.top-container-portrait{
+    display: flex;
+    align-items: end;
+    height: 50%;
+    width: 100%;
+
+}
+
+.bottom-container-portrait{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 47%;
+
+}
+
+.top-content-portrait{
+    font-size: 16vw;
+    font-weight: 600;
+
+    background-image: linear-gradient(130deg , violet, blueviolet);
+    background-clip: text;
+    color: transparent;
+
+    animation: TopContentPortraitAnimation 0.5s ease-in-out 1 forwards;
+}
+
+.bottom-content-portrait{
+    font-size: 6vw;
+    font-weight: 600;
+
+    width: 70%;
+
+    animation: BottomContentPortraitAnimation 0.5s ease-in-out 1 forwards;
+}
+
+.underline{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5%;
+}
+
+@keyframes TopContentPortraitAnimation {
+    from{
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes BottomContentPortraitAnimation {
+    from {
+        transform: translateX(10%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*The code bellow is for the landscape version*/
+
+.hero-section-landscape{
+    display: flex;
+    height: 100dvh; 
+
+    padding-left: 12%;
+    padding-right: 5%;
+}
+
+.hero-container-landscape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 5%;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.top-container-landscape{
+    display: flex;
+    align-items: end;
+    height: 60%;
+    width: 100%;
+
+    font-size: 22vh;
+    font-weight: 600;
+}
+
+.top-content-landscape{
+    background-image: linear-gradient(-30deg , violet, blueviolet);
+    background-clip: text;
+    color: transparent;
+
+    animation: TopContentAnimationLandscape 0.5s ease-in-out 1 forwards;
+}
+
+.bottom-container-landscape{
+    display: flex;
+    justify-content: end;
+
+    height: 38%;
+    width: 100%;
+
+    font-size: 6.5vh;
+    font-weight: 600;
+}
+
+.bottom-content-landscape{
+    width: 60%;
+
+    animation: BottomContentAnimationLandscape 0.5s ease-in-out 1 forwards;
+}
+
+@keyframes TopContentAnimationLandscape {
+    from {
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes BottomContentAnimationLandscape {
+    from{
+        transform: translateX(10%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/*The code bellow is for the about-me-portrait section*/
+
+.aboutme-section-portrait{
+    display: flex;
+    height: 90dvh;
+
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.aboutme-container-portrait{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
+}
+
+.ispent-container-portrait{
+    display: flex;
+    width: 80%;
+
+    font-weight: 600;
+    font-size: 7vw;
+}
+
+.ispent-portrait span {
+    color: hsl(0 0% 100% / 0.2);
+    background: linear-gradient(130deg, blue, red);
+    background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 65vh;
+
+
+}
+
+@keyframes scroll-reveal {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
+.enough-container-portrait{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.enough-portrait span{
+    width: 100%;
+
+    color: hsl(0 0% 100% / 0.2);
+    background: linear-gradient(130deg, blue, red);
+    background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain -5vh;
+    animation-range-end: contain 55vh;
+}
+
+.enough-portrait{
+    width: 63%;
+}
+
+.void, .void1{
+    height: 30vh;
+}
+
+.no-void{
+    display: none;
+}
+
+/*The code bellow is for the landscape version*/
+
+.aboutme-section-landscape{
+    display: flex;
+    height: 120dvh;
+    
+    font-weight: 600;
+
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.aboutme-container-landscape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.ispent-container-landscape{
+    display: flex;
+    font-size: 4vw;
+}
+
+.ispent-landscape{
+    width: 47%;
+    height: 100%;
+}
+
+.ispent-landscape span{
+    
+
+    color: hsl(0 0% 100% / 0.2);
+    background: linear-gradient(90deg, red, blue);
+    background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain -15vh;
+    animation-range-end: contain 50vh;
+}
+
+.enough-container-landscape{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2vw;
+}
+
+.enough-landscape{
+    height: 100%;
+    width: 35%;
+}
+
+.enough-landscape span{
+    color: hsl(0 0% 100% / 0.2);
+    background: linear-gradient(90deg, red, blue);
+    background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain -15vh;
+    animation-range-end: contain 50vh;
+}
+
+/*The code bellow is for the landscape version of the serv-head section*/
+
+
+.services-section-1-landscape{
+    display: flex;
+    justify-content: center;
+    height: 80dvh;
+    
+    
+}
+
+.services-container-1-landscape{
+    height: 100%;
+    width: max-content;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.services-heading-landscape{
+    width: 100%;
+    font-size: 9vw;
+    font-weight: 600;
+}
+
+.services-heading-landscape span{
+    color: hsl(0 0% 100% / 0.2);
+    background: linear-gradient(90deg, white, white);
+    background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain -30vh;
+    animation-range-end: contain 20vh;
+}
+
+
+/*The code bellow is for the services-heading section*/
+
+.services-section-1-portrait{
+    display: flex;
+    justify-content: center;
+}
+
+.services-container-1-portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-heading-portrait{
+    font-size: 10vw;
+    font-weight: 700;
+
+    width: 75%;
+}
+
+.services-heading-portrait span {
+    color: hsl(0 0% 100% / 0.2);
+    background: linear-gradient(90deg, white, white);
+    background-repeat: no-repeat;
+    background-clip: text;
+    background-size: 0% 100%;
+
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+
+    animation-range-start: contain -10vh;
+    animation-range-end: contain 20vh;
+}
+
+/*The code bellow is for the services landscape section*/
+
+.services-section-2-landscape{
+    display: flex;
+    height: max-content;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+
+    color: black;
+}
+
+.services-container-2-landscape{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.services-1and2-landscape{
+    width: 100%;
+    height: 39vw;
+    margin-bottom: 1vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services-3and4-landscape{
+    width: 100%;
+    height: 39vw;
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service-3-landscape{
+    height: 100%;
+    width: 44%;
+    background-color: #FF63F9;
+    box-shadow: 0 4px 3em #FF63F9;
+    border-radius: 0.5em;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.service-3-landscape > div{
+    height: 90%;
+    width: 90%;
+
+    font-size: 3vw;
+    font-weight: 600;
+
+    padding-top: 1em;
+    padding-left: 0.5em;
+}
+
+.service-4-landscape{
+    height: 100%;
+    width: 55%;
+    background: #ae2cff;
+    box-shadow: 0 0px 3em #ae2cff;
+    border-radius: 0.5em;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.service-4-landscape > div{
+    height: 90%;
+    width: 90%;
+
+    font-size: 3.6vw;
+    font-weight: 600;
+
+    padding-top: 1em;
+    padding-left: 0.5em;
+}
+
+.service-1-landscape{
+    width: 35%;
+    height: 100%;
+    background-color: #8AD8C0;
+    box-shadow: 0 4px 3em #8AD8C0;
+    border-radius: 0.5em;
+    opacity: 0;
+
+    display: flex;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.service-1-landscape > div{
+    width: max-content;
+    height: max-content;
+    font-size: 4.1vw;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-left: 0.6em;
+    padding-right: 1em;
+    padding-top: 1.1em;
+}
+
+.service-2-landscape{
+    width: 64%;
+    height: 100%;
+    background-color: #C6F459;
+    box-shadow: #C6F459 0px 4px 3em;
+    border-radius: 0.5em;
+    opacity: 0;
+
+    display: flex;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+    
+}
+
+.service-2-landscape > div {
+    width: max-content;
+    height: max-content;
+
+    font-size: 4.5vw;
+    font-weight: 600;
+    padding-left: 0.5em;
+    padding-top: 1.1em;
+}
+
+@keyframes appear{
+    from{
+        opacity: 40%;
+        scale: 0.7;
+    }
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/*The code bellow is for the services-portrait section*/
+
+
+
+.services-section-2-portrait{
+    display: flex;
+    padding-left: 6%;
+    padding-right: 6%;
+
+    height: max-content;
+}
+
+.services-container-2-portrait{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5%;
+
+    height: 100%;
+    width: 100%;
+}
+
+.service-1-portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: max-content;
+    width: 100%;
+    border-radius: 35px;
+    background: #8AD8C0;
+    box-shadow: 0 4px 250px #8AD8C0;
+    opacity: 0;
+    padding-top: 4%;
+    padding-bottom: 8%;
+    margin-bottom: 4%;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.service-1-portrait > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    height: 85%;
+    max-height: 85%;
+    width: 95%;
+    max-width: 95%;
+
+    font-size: 10vw;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.service-2-portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: max-content;
+    width: 100%;
+    border-radius: 35px;
+
+    background: #C6F459;
+    box-shadow: 0 4px 250px #C6F459;
+
+    opacity: 0;
+    padding-bottom: 8%;
+    padding-top: 4%;
+    margin-bottom: 4%;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.service-2-portrait > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    height: 85%;
+    max-height: 85%;
+    width: 95%;
+    max-width: 95%;
+
+    font-size: 9vw;
+    font-weight: 700;
+}
+
+.service-3-portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: max-content;
+    width: 100%;
+    border-radius: 35px;
+
+    background: #FF63F9;
+    box-shadow: 0 4px 250px #FF63F9;
+
+    opacity: 0;
+    padding-bottom: 8%;
+    padding-top: 4%;
+    margin-bottom: 4%;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.service-3-portrait > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    height: 85%;
+    max-height: 85%;
+    width: 95%;
+    max-width: 95%;
+
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+.service-4-portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: max-content;
+    width: 100%;
+    border-radius: 35px;
+
+    background: #ae2cff;
+    box-shadow: 0 4px 250px #ae2cff;
+
+    opacity: 0;
+    padding-bottom: 8%;
+    padding-top: 4%;
+    margin-bottom: 4%;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.service-4-portrait > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+
+    height: 85%;
+    max-height: 85%;
+    width: 95%;
+    max-width: 95%;
+
+    font-size: 7vw;
+    font-weight: 700;
+}
+
+/*The code bellow is for the call-to-action-landscape section*/
+
+
+.cta-section-landscape{
+    height: max-content;
+
+    display: flex;
+
+    margin-bottom: 30vh;
+}
+
+.cta-container-landscape{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-heading-landscape{
+    display: flex;
+    justify-content: center;
+
+    font-size: 3vw;
+    font-weight: 600;
+    text-align: center;
+
+    margin-bottom: 2vh;
+}
+
+.cta-heading-landscape > div{
+    font-size: 4vw;
+
+    background-image: linear-gradient(130deg, blueviolet, violet);
+	background-clip: text;
+	color: transparent;
+
+    animation: fade-animation linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 15vh;
+    opacity: 0;
+}
+
+.cta-heading-landscape span {
+    font-weight: 400;
+}
+
+.cta-paragraph-landscape{
+    font-size: 2vw;
+    color: #FF63F9;
+    font-weight: 500;
+    text-align: center;
+
+    padding-left: 25%;
+    padding-right: 25%;
+    
+
+    margin-bottom: 10vh;
+
+    animation: fade-animation linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 15vh;
+    opacity: 0;
+}
+
+
+
+@keyframes fade-animation {
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+.cta-btn-landscape{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 29vh;
+}
+
+.cta-btn-landscape button{
+    font-size: 2vw;
+    color: #FF63F9;
+    background: transparent;
+    border-radius: 0.425em;
+    border: 0.245vw solid #FF63F9;
+    padding: 0.3em 0.55em;
+    box-shadow: inset 0 0 0.6em #FF63F9
+    ,0 0 1em #FF63F9;
+
+
+    cursor: pointer;
+
+    position: relative;
+    opacity: 0;
+
+    transition: background-color 100ms linear;
+
+    animation: fade-animation linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 5vh;
+}
+
+.cta-btn-landscape button::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: #FF63F9;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(2em) rotateX(40deg) scale(1, 0.6);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+.cta-btn-landscape button:hover, .cta-btn>button:focus{
+    background: #FF63F9;
+    color: black;
+}
+
+.cta-btn-landscape button::after{
+    content: "";
+    position: absolute;
+    border-radius: 0.425em;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    box-shadow: 0 0 1.5em 0.2em #FF63F9;
+
+    transition: opacity 100ms linear;
+}
+
+.cta-btn-landscape button:hover::after,
+.cta-btn-landscape button:focus::after{
+    opacity: 1;
+}
+
+.cta-btn-landscape button:hover::before,
+.cta-btn-landscape button:focus::before{
+    opacity: 1;
+}
+
+.cta-image-landscape{
+    display: flex;
+    justify-content: center;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cta-image-landscape img{
+    width: 100%;
+    max-width: 100%;
+
+    border-radius: 1em;
+    box-shadow: #f87bf3 0 4px 4em;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+    opacity: 0;
+}
+
+
+/*The code bellow is for the call-to-action-portrait section*/
+
+.cta-section-portrait{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    height: auto;
+}
+
+.cta-container-portrait{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-heading-portrait{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 9vw;
+    font-weight: 600;
+    text-align: center;
+
+    
+
+    margin-bottom: 6%;
+    opacity: 0;
+
+    animation: fade-animation linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 10vh;
+}
+
+.cta-heading-portrait > div{
+    background: linear-gradient(130deg, #ae2cff, #FF63F9);
+    background-clip: text;
+    color: transparent;
+}
+
+.cta-heading-portrait span{
+    font-weight: 400;
+}
+
+.cta-paragraph-portrait{
+    display: flex;
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+    color: #FF63F9;
+    width: 92%;
+    opacity: 0;
+
+    margin-bottom: 10%;
+
+    animation: fade-animation linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 5vh;
+
+}
+
+.cta-btn-portrait button{
+    font-size: 7vw;
+    color: #FF63F9;
+    background: transparent;
+    border-radius: 0.425em;
+    border: 0.45vw solid #FF63F9;
+    padding: 0.3em 0.55em;
+    box-shadow: inset 0 0 0.6em #FF63F9
+    ,0 0 1em #FF63F9;
+
+
+    cursor: pointer;
+
+    position: relative;
+    opacity: 0;
+
+    transition: background-color 100ms linear;
+
+    animation: fade-animation linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 0vh;
+    animation-range-end: contain 5vh;
+
+    margin-bottom: 20vh;
+}
+
+.cta-btn-portrait button::before{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: #FF63F9;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(2em) rotateX(40deg) scale(1, 0.6);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+.cta-btn-portrait button:hover, .cta-btn>button:focus{
+    background: #FF63F9;
+    color: black;
+}
+
+.cta-btn-portrait button::after{
+    content: "";
+    position: absolute;
+    border-radius: 0.425em;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    box-shadow: 0 0 1.5em 0.2em #FF63F9;
+
+    transition: opacity 100ms linear;
+}
+
+.cta-btn-portrait button:hover::after,
+.cta-btn-portrait button:focus::after{
+    opacity: 1;
+}
+
+.cta-btn-portrait button:hover::before,
+.cta-btn-portrait button:focus::before{
+    opacity: 1;
+}
+
+.cta-image-portrait{
+    width: 85%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.cta-image-portrait > img{
+    width: 100%;
+    max-width: 100%;
+
+    object-fit: fill;
+
+    border-radius: 2em;
+
+    animation: appear linear forwards;
+    animation-timeline: view();
+    animation-range: entry 0;
+
+    box-shadow: 0 0 10em rgb(255, 144, 246);
+
+
+    margin-bottom: 15vh;
+
+
+}
+
+
+/*This code is for the footer-landscape section*/
+
+
+.footer-section-landscape{
+    display: flex;
+    background: #ae2cff;
+    padding-top: 3%;
+    color: black;
+
+    height: 94dvh;
+}
+
+.footer-container-landscape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.ftr-top-content-landscape{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    font-weight: 600;
+    font-size: 5vh;
+}
+
+.footer-section-landscape a{
+    text-decoration: none;
+    color: black;
+}
+
+.cr-landscape{
+    margin-bottom: 2vw;
+    font-weight: 700;
+}
+
+.eml-landscape{
+    margin-bottom: 1vw;
+}
+
+.ftr-bottom-content-landscape{
+    font-size: 13.2vw;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+}
+
+.ftr-bottom-content-landscape span{
+    color: white;
+}
+
+
+/*This code is for the footer-portrait section*/
+
+.footer-section-portrait{
+    display: flex;
+    height: 65dvh;
+    background: #ae2cff;
+    color: black;
+
+
+    padding-top: 5%;
+}
+
+.footer-container-portrait{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+}
+
+.ftr-top-content-portrait{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5vw;
+    text-align: center;
+
+    font-weight: 700;
+}
+
+.cr-portrait{
+    margin-bottom: 5vh;
+}
+
+.eml-portrait{
+    margin-bottom: 2vh;
+}
+
+.ftr-bottom-content-portrait{
+    text-align: center;
+    font-size: 13vw;
+    font-weight: 700;
+}
+
+.ftr-bottom-content-portrait > span{
+    color: white;
+}
+
+.footer-section-portrait a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.linebreak-portrait{
+    display: none;
+}
+
+.linebreak-landscape{
+    display: block;
+}
